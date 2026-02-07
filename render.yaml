@@ -1,0 +1,9 @@
+services:
+  -type: web
+    name: bees-pdf
+    env: python
+    buildCommad: |
+      apt-get update && apt-get install -y libzbar0
+      pip install --prefer-binary --no-cache-dir -r requirements.txt
+    startCommand: |
+      gunicorn app:app
