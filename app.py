@@ -12,7 +12,7 @@ CORS(app, resources={r"/upload_pdf": {"origins": "*"}})
 @app.route('/', methods=['GET'])
 def hello_world():
     return 'Hello World!'
-@app.route('/upload_pdf', methods=['POST'])
+@app.route('/upload_pdf', methods=['GET', 'POST'])
 def upload_pdf():
     pdf_file = request.files.get('file')
 
