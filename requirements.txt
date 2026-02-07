@@ -1,7 +1,7 @@
 Flask
 flask-cors
-gunicorn==21.2.0
 PyMuPDF==1.24.11
+opencv-python-headless
 pyzbar
 numpy
-opencv-python-headless
+gunicorn
