@@ -1,0 +1,7 @@
+Flask
+flask-cors
+gunicorn
+PyMuPDF
+pyzbar
+numpy
+opencv-python-headless
